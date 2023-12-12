@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HN_ JV231103_AD_TranVanDuc</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero">
+        <div class="card-list">
+          <div class="card"><img src="./images/Mastercard.png" /></div>
+          <div class="card"><img src="./images/Paypal-logo.png" /></div>
+          <div class="card"><img src="./images/Visa.png" /></div>
+          <div class="card"><img src="./images/american.png" /></div>
+          <div class="card"><img src="./images/Discover_Card.png" /></div>
+        </div>
+
+        <form>
+          <div class="cardnumber">
+            <p for="">Số Thẻ</p>
+            <input
+              id="inputField"
+              type="text"
+              placeholder="1111 2222 3333 4444"
+            />
+          </div>
+          <div class="cardinfor">
+            <div class="cardDate">
+              <label>Ngày Hết Hạn</label>
+              <input id="expiryField" type="text" placeholder="Tháng/ Năm" />
+            </div>
+            <div class="cardPass">
+              <label>Mã CVC/CVV</label>
+              <input id="cvvField" type="text" placeholder="***" />
+            </div>
+          </div>
+        </form>
+
+        <button id="saveButton">Lưu</button>
+      </div>
+
+      <div class="quanLiCard">
+        <table>
+          <thead>
+            <tr>
+              <th>Số Thẻ</th>
+              <th>Hạn Thẻ</th>
+              <th>Mã CVV</th>
+              <th>Hoạt động</th>
+            </tr>
+          </thead>
+          <tbody id="dataTableBody">
+            <tr>
+              <td id="cardNumberCell"></td>
+              <td id="expiryDateCell"></td>
+              <td id="cvvCell"></td>
+              <td>
+                <div class="action">
+                  <!-- <button>Xem</button>
+                  <button>Sửa</button>
+                  <button>Xoá</button> -->
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- JS link -->
+    <script src="./main.js"></script>
+  </body>
+</html>
